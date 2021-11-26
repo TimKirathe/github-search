@@ -1,7 +1,7 @@
 div {
   font-size: 3.5rem;
   color: white;
-  background-color: rgba(236, 240, 241, 0.5)
+  background-color: rgba(236, 240, 241, 0.2)
 }
 
 li {
@@ -16,4 +16,9 @@ ul {
 
 .brand {
   margin: 2rem;
+}
+
+div nav a:hover {
+  cursor: pointer;
+  color: rgba(133, 193, 233, 0.5);
 }
