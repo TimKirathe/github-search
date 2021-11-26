@@ -35,7 +35,7 @@ body{
   overflow: hidden;
 }
 
-.blurred-box::after {
+/*.blurred-box::after {
   content: '';
   height: 100%;
   width: 100%;
@@ -43,4 +43,4 @@ body{
   filter: blur(10rem);
   position: absolute;
   box-shadow: 0 0 0 200px rgba(255,255,255,0.3);
-}
+}*/

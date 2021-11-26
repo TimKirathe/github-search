@@ -2,7 +2,7 @@ h1 {
   font-size: 5rem;
 }
 
-p {
+p, li {
   font-size: 2rem;
 }
 
@@ -14,10 +14,39 @@ img {
   border-radius: 50%;
   padding: 0;
   margin: 0;
+  height: 20rem;
+  width: 20rem;
 }
 
- h2 {
+h2 {
    font-size: 4rem;
    font-weight: bold;
    color: white;
- }
+}
+
+h4 {
+  font-size: 3rem;
+  color: white;
+  font-weight: bold;
+}
+
+ul {
+  list-style: none;
+}
+
+a:hover {
+  color: white;
+}
+
+a:active{
+  color: purple;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  display: inline;
+  margin: 1rem;
+}
