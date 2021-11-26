@@ -1,0 +1,17 @@
+div {
+  text-align: center;
+  width: 80%;
+  height: 80%;
+  margin: auto;
+  position: relative;
+  left: 50%;
+  top: 50%;
+}
+
+h1 {
+  font-size: 6rem;
+}
+
+p {
+  font-size: 3rem;
+}
