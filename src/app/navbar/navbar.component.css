@@ -1,0 +1,19 @@
+div {
+  font-size: 3.5rem;
+  color: white;
+  background-color: rgba(236, 240, 241, 0.5)
+}
+
+li {
+  margin-top: 2rem;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  gap: var(--gap, 1rem);
+}
+
+.brand {
+  margin: 2rem;
+}
