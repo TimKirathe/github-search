@@ -9,12 +9,14 @@ import { GithubService } from '../github.service';
 })
 export class SearchFormComponent implements OnInit {
 
- users: User[] = [];
+ users: any = {};
 
-  getUsername() {
-    this.githubService.fetchUsername().subscribe((data) => {
-      console.log(data)
+  getUsername(value: any) {
+    //console.log(typeof value.username);
+    this.githubService.fetchUsername(value.username).subscribe((data) => {
+      console.log(typeof data)
       this.users = data;
+      console.log(this.users)
     })
   }
   constructor(private githubService: GithubService) { }

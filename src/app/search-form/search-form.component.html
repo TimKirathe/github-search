@@ -1,6 +1,6 @@
 <div class="col-md-6 forms">
   <h1>Search Form</h1>
-  <form #usernameForm='ngForm' (ngSubmit)="getUsername()">
+  <form #usernameForm='ngForm' (ngSubmit)="getUsername(usernameForm.value)">
     <div>
       <label for="githubUsername">Enter the GitHub Username you would like to search for:</label>
       <input required ngModel name="username" #username="ngModel" type="text" id="githubUsername" class="inputs" />

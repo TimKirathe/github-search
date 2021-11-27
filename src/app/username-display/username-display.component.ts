@@ -8,7 +8,7 @@ import { User } from '../user';
 })
 export class UsernameDisplayComponent implements OnInit {
 
-  @Input() users: User[] = [];
+  @Input() users: any = {};
 
   constructor() { }
 

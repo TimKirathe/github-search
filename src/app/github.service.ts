@@ -9,10 +9,10 @@ export class GithubService {
 
   constructor(private http: HttpClient) { }
 
-  fetchUsername(): Observable<any> {
+  fetchUsername(username: string): Observable<any> {
 
     const url = "https://api.github.com/users"
 
-    return this.http.get<any>(url)
+    return this.http.get<any>(url + "/" + username)
   }
 }
