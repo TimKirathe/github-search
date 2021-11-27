@@ -12,6 +12,7 @@ export class GithubService {
   fetchUsername(): Observable<any> {
 
     const url = "https://api.github.com/users"
+
     return this.http.get<any>(url)
   }
 }
