@@ -1,9 +1,9 @@
-<div class="body">
+<div class="body1">
   <div class="form">
     <h1>Search!</h1>
     <form #usernameForm='ngForm' (ngSubmit)="getUsername(usernameForm.value)">
       <div>
-        <input required ngModel name="username" #username="ngModel" type="text" id="githubUsername" class="inputs" placeholder=" "/>
+        <input required ngModel name="username" #username="ngModel" type="text" id="githubUsername" class="inputs" autocomplete="off"/>
         <label class="lbl" for="githubUsername">Username:</label>
         <button type="submit" id="userButton" class="btn btn-outline-primary">Search</button>
       </div>
@@ -11,4 +11,6 @@
     <br>
   </div>
 </div>
-<app-username-display [users]='users'></app-username-display>
+<div class="body2">
+  <app-username-display [users]='users'></app-username-display>
+</div>

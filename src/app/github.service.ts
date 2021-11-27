@@ -7,6 +7,7 @@ import { Observable } from 'rxjs/';
 })
 export class GithubService {
 
+
   constructor(private http: HttpClient) { }
 
   fetchUsername(username: string): Observable<any> {

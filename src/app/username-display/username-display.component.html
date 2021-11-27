@@ -1,3 +1,6 @@
-<div class="col-md-6">
-  <p>{{users.login}}</p>
+<div *ngIf='users.name ! ""'>
+  <h1>{{users.login}}</h1>
+  <img src="{{users.avatar_url}}" alt="GitHub profile picture" height="150" width="150" />
+  <br>
+  <h3>Click to view {{users.login}}'s Repositories</h3>
 </div>
