@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { User } from '../user';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-username-display',
@@ -8,10 +8,14 @@ import { User } from '../user';
 })
 export class UsernameDisplayComponent implements OnInit {
 
-  
+
   @Input() users: any = {};
 
-  constructor() { }
+  onSelect(users) {
+    this.router.navigate(['/repos', users.login]);
+  }
+
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
   }

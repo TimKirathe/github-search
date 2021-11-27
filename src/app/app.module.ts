@@ -10,6 +10,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { SearchFormComponent } from './search-form/search-form.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { UsernameDisplayComponent } from './username-display/username-display.component';
+import { RepoDataComponent } from './repo-data/repo-data.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { UsernameDisplayComponent } from './username-display/username-display.co
     NavbarComponent,
     SearchFormComponent,
     NotFoundComponent,
-    UsernameDisplayComponent
+    UsernameDisplayComponent,
+    RepoDataComponent
   ],
   imports: [
     BrowserModule,
