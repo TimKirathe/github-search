@@ -1,18 +1,18 @@
-<div class="col-md-6">
+<div class="col-md-6 forms">
   <h1>Search Form</h1>
   <form #usernameForm='ngForm' (ngSubmit)="getUsername()">
     <div>
       <label for="githubUsername">Enter the GitHub Username you would like to search for:</label>
-      <input required ngModel name="username" #username="ngModel" type="text" id="githubUsername" class="form-control" />
-      <button type="submit" id="userButton" class="btn btn-outline-success">Search</button>
+      <input required ngModel name="username" #username="ngModel" type="text" id="githubUsername" class="inputs" />
+      <button type="submit" id="userButton" class="btn btn-outline-primary">Search</button>
     </div>
   </form>
-  <h1>OR:</h1>
+  <br>
   <form #repositoryForm='ngForm'>
     <div class="form-group">
       <label for="repository">Enter the Github Repository you would like to search for:</label>
-      <input required ngModel name="repository" #repository="ngModel" type="text" id="repository" class="form-control" />
-      <button type="submit" id="repoButton" class="btn btn-outline-success">Search</button>
+      <input required ngModel name="repository" #repository="ngModel" type="text" id="repository" class="inputs" />
+      <button type="submit" id="repoButton" class="btn btn-outline-primary">Search</button>
     </div>
   </form>
 </div>

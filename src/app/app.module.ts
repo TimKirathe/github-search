@@ -9,6 +9,7 @@ import { LandingPageComponent } from './landing-page/landing-page.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { SearchFormComponent } from './search-form/search-form.component';
 import { NotFoundComponent } from './not-found/not-found.component';
+import { UsernameDisplayComponent } from './username-display/username-display.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { NotFoundComponent } from './not-found/not-found.component';
     LandingPageComponent,
     NavbarComponent,
     SearchFormComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    UsernameDisplayComponent
   ],
   imports: [
     BrowserModule,
