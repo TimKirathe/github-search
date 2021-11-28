@@ -13,13 +13,16 @@ export class SearchFormComponent implements OnInit {
 
 
   getUsername(value: any) {
-    this.githubService.fetchUser(value.username).subscribe((data) => {
-      console.log(data)
-      this.users = data;
-      console.log(this.users)
-    }, (err) => {
-      alert("An error occured")
-    })
+    this.githubService.fetchUser(value.username)
+    this.users = this.githubService.user
+
+    // .subscribe((data) => {
+    //   console.log(data)
+    //   this.users = data;
+    //   console.log(this.users)
+    // }, (err) => {
+    //   alert("An error occured")
+    // })
   }
   constructor(private githubService: GithubService) { }
 
