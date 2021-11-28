@@ -1,4 +1,4 @@
 export class User {
-  constructor(public repository: string) {
+  constructor(public username: string) {
   }
 }

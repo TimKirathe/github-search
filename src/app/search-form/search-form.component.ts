@@ -7,14 +7,19 @@ import { GithubService } from '../github.service';
   templateUrl: './search-form.component.html',
   styleUrls: ['./search-form.component.css']
 })
-export class SearchFormComponent implements OnInit {
+export class SearchFormComponent {
 
- users: any = {};
+ users: any[] = [];
+ username: User;
 
 
   getUsername(value: any) {
-    this.githubService.fetchUser(value.username)
-    this.users = this.githubService.user
+    this.username = new User(value.username)
+    this.githubService.fetchUser(this.username.username)
+
+    setTimeout(this.assignUser, 5000)
+
+    // this.githubService.fetchUser(value.username)
 
     // .subscribe((data) => {
     //   console.log(data)
@@ -24,7 +29,20 @@ export class SearchFormComponent implements OnInit {
     //   alert("An error occured")
     // })
   }
-  constructor(private githubService: GithubService) { }
+
+ assignUser() {
+   this.users = this.githubService.user
+   console.log(this.users)
+
+   for (var i=0; i<this.users.length; i++) {
+     if (this.username.username === this.users[i].login) {
+       console.log(this.users[i])
+     }
+   }
+ }
+
+  constructor(private githubService: GithubService) {
+  }
 
   ngOnInit(): void {
   }
