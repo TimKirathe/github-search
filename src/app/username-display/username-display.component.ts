@@ -12,7 +12,7 @@ export class UsernameDisplayComponent implements OnInit {
   @Input() users: any = {};
 
   onSelect(users) {
-    this.router.navigate(['/repos', users.login]);
+    this.router.navigate(['/repos', users.repos_url]);
   }
 
   constructor(private router: Router) { }

@@ -9,15 +9,15 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class RepoDataComponent implements OnInit {
 
-  public selectedUsername;
+  public selectedRepos;
 
   constructor(private route: ActivatedRoute) {
 
   }
 
   ngOnInit(): void {
-    let username = this.route.snapshot.paramMap.get('username')
-    this.selectedUsername = username
+    let user = this.route.snapshot.paramMap.get('userRepos')
+    this.selectedRepos = user
   }
 
 }

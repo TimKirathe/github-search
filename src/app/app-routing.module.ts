@@ -8,7 +8,7 @@ import { RepoDataComponent } from './repo-data/repo-data.component';
 const routes: Routes = [
   {path: 'landing-page', component: LandingPageComponent},
   {path: 'search-form', component: SearchFormComponent},
-  {path: 'repos/:username', component: RepoDataComponent},
+  {path: 'repos/:userRepos', component: RepoDataComponent},
   {path: '', redirectTo: 'landing-page', pathMatch: 'full'},
   {path: '**', component: NotFoundComponent},
 ];
