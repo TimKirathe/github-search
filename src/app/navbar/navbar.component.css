@@ -11,7 +11,7 @@ li {
 ul {
   list-style: none;
   display: flex;
-  gap: var(--gap, 1rem);
+  gap: 1rem;
 }
 
 .brand {
@@ -21,4 +21,20 @@ ul {
 div nav a:hover {
   cursor: pointer;
   color: rgba(133, 193, 233, 0.5);
+}
+
+@media screen and (max-width: 647px) {
+
+  header {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr)
+  }
+
+  ul {
+    all: unset;
+    list-style: none;
+  }
+  li {
+    margin-left: 2rem;
+  }
 }

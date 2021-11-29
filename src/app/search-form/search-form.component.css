@@ -76,6 +76,12 @@ button {
   font-size: 2rem;
 }
 
+p {
+  color: white;
+  font-size: 1.8rem;
+  margin-top: 1rem;
+}
+
 .body2 {
   height: 60vh;
   width: 90%;

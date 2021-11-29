@@ -20,6 +20,7 @@ export class SearchFormComponent {
   }
 
   onSelect(user) {
+    console.log(this.githubService.user)
     this.router.navigate(['/repos', user.repos_url]);
   }
 
