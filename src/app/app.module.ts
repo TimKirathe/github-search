@@ -11,6 +11,7 @@ import { SearchFormComponent } from './search-form/search-form.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { RepoDataComponent } from './repo-data/repo-data.component';
 import { HighlightPipe } from './highlight.pipe';
+import { ColorDirective } from './color.directive';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { HighlightPipe } from './highlight.pipe';
     SearchFormComponent,
     NotFoundComponent,
     RepoDataComponent,
-    HighlightPipe
+    HighlightPipe,
+    ColorDirective
   ],
   imports: [
     BrowserModule,
