@@ -80,16 +80,19 @@ button {
   height: 60vh;
   width: 90%;
   margin: auto;
-  color: white;
   text-align: center;
 }
 
-h2 {
+.usernameDiv {
   font-size: 3rem;
 }
 
 img {
   border-radius: 50%;
+}
+
+h3 {
+  color: white;
 }
 
 h3:hover {

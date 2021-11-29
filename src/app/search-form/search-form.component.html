@@ -13,7 +13,7 @@
 </div>
 <div class="body2">
   <div *ngIf='githubService.user.name ! ""'>
-    <h2>{{githubService.user.login}}</h2>
+    <div class="usernameDiv" [innerHTML] = 'githubService.user.login | highlight: githubService.user.login'></div>
     <img src="{{githubService.user.avatar_url}}" alt="GitHub profile picture" height="170" width="170" />
     <br>
     <br>
