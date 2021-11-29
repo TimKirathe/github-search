@@ -10,6 +10,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { SearchFormComponent } from './search-form/search-form.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { RepoDataComponent } from './repo-data/repo-data.component';
+import { HighlightPipe } from './highlight.pipe';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { RepoDataComponent } from './repo-data/repo-data.component';
     NavbarComponent,
     SearchFormComponent,
     NotFoundComponent,
-    RepoDataComponent
+    RepoDataComponent,
+    HighlightPipe
   ],
   imports: [
     BrowserModule,
