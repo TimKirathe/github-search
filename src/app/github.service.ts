@@ -21,7 +21,6 @@ export class GithubService {
 
     let promise = new Promise<void>((resolve, reject) => {
       this.http.get(url + '/' + username + "?access_token" + environment.accessToken).toPromise().then(response => {
-        console.log(response)
         this.user = response
         console.log(this.user)
         resolve();

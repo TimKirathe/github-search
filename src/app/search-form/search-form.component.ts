@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { User } from '../user';
 import { GithubService } from '../github.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-search-form',
@@ -9,39 +10,20 @@ import { GithubService } from '../github.service';
 })
 export class SearchFormComponent {
 
- users: any[] = [];
+ users: any = {};
  username: User;
 
 
   getUsername(value: any) {
     this.username = new User(value.username)
     this.githubService.fetchUser(this.username.username)
-
-    setTimeout(this.assignUser, 5000)
-
-    // this.githubService.fetchUser(value.username)
-
-    // .subscribe((data) => {
-    //   console.log(data)
-    //   this.users = data;
-    //   console.log(this.users)
-    // }, (err) => {
-    //   alert("An error occured")
-    // })
   }
 
- assignUser() {
-   this.users = this.githubService.user
-   console.log(this.users)
+  onSelect(user) {
+    this.router.navigate(['/repos', user.repos_url]);
+  }
 
-   for (var i=0; i<this.users.length; i++) {
-     if (this.username.username === this.users[i].login) {
-       console.log(this.users[i])
-     }
-   }
- }
-
-  constructor(private githubService: GithubService) {
+  constructor(public githubService: GithubService, private router: Router) {
   }
 
   ngOnInit(): void {

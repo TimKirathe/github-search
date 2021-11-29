@@ -77,8 +77,22 @@ button {
 }
 
 .body2 {
+  height: 60vh;
   width: 90%;
   margin: auto;
   color: white;
   text-align: center;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+img {
+  border-radius: 50%;
+}
+
+h3:hover {
+  color: blue;
+  cursor: pointer;
 }
